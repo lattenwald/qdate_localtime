@@ -1,4 +1,4 @@
--define(tz_index, {dict,203,41,64,32,205,123,
+-define(tz_index, {dict,204,41,64,32,205,123,
                         {[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]},
                         {{[["WGST","America/Godthab"],["GMT+2","Etc/GMT+2"]],
                           [["NPT","Asia/Kathmandu","Asia/Katmandu"],
@@ -208,6 +208,7 @@
                             "Zulu"],
                            ["WIT","Asia/Jayapura"],
                            ["GMT+9","Etc/GMT+9"],
+                           ["MSD","Europe/Moscow"],
                            ["MART","Pacific/Marquesas"]],
                           [["SRT","America/Paramaribo"],
                            ["MAWT","Antarctica/Mawson"],
