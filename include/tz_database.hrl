@@ -617,6 +617,7 @@
       {"US/Samoa",{"SST","SST"},undef,-660,0,undef,{0,0},undef,{0,0}},
       {"UTC",{"UTC","UTC"},undef,0,0,undef,{0,0},undef,{0,0}},
       {"Universal",{"UTC","UTC"},undef,0,0,undef,{0,0},undef,{0,0}},
+      {"Universal Time",{"UT","UT"},undef,0,0,undef,{0,0},undef,{0,0}},
       {"W-SU",{"MSK","MSK"},undef,180,0,undef,{0,0},undef,{0,0}},
       {"WET",{"WET","WET"},{"WEST","WEST"},0,60,{last,sun,mar},{1,0},{last,sun,oct},{2,0}},
       {"Zulu",{"UTC","UTC"},undef,0,0,undef,{0,0},undef,{0,0}}
