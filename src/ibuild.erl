@@ -5,7 +5,7 @@
 
 -export([build_index/0, main/1]).
 
--include("tz_database.hrl").
+-include("../include/tz_database.hrl").
 
 build_tzlist(TzName, Name, Dict) ->
    case dict:find(Name, Dict) of
@@ -23,7 +23,7 @@ build_index() ->
          build_tzlist(TzName, Name, Acc)
    end,
    I = lists:foldl(F, dict:new(), ?tz_database),
-   {ok, File} = file:open("tz_index.hrl", [write]),
+   {ok, File} = file:open("include/tz_index.hrl", [write]),
    io:fwrite(File, "-define(tz_index, ~p).\n", [I]).
 
 %% So this can be run from escript:

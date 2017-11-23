@@ -264,7 +264,7 @@ sub zone_line {
          (($until_month > $current_month) ||
           (($until_month == $current_month) &&
            ($until_day >= $current_day))))) {
-      "future until \"$until\" not handled";
+      print STDERR "future until \"$until\" not handled";
     }
     return;
   }
@@ -297,7 +297,7 @@ sub zone_line {
     # If DST started being observed, do.  (Except that we don't handle
     # this yet.)
     print STDERR Data::Dump::dump(\@rules), "\n";
-    die "one rule for $name";
+    # die "one rule for $name";
     $name1 = zonename($format, $rules[0]->[RULE_LETTERS], undef);
     $name2 = undef;
     $rule1 = $rule2 = RULE_NULL;
@@ -513,4 +513,3 @@ sub last_active_epoch {
   my $day = on_to_day_of_month($on, $year, $month);
   return timelocal(0, 0, 0, $day, $month, $year);
 }
-
